@@ -1,0 +1,39 @@
+{
+  "name": "aglos",
+  "version": "0.0.1",
+  "description": "Async Global State for the Web Application",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "new:version": "npm version patch && npm publish && git push origin master && git push --tags",
+    "test": "npm run build",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "async",
+    "global",
+    "state",
+    "redux",
+    "react"
+  ],
+  "author": {
+    "name": "Razzwan",
+    "email": "razvanlomov@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/altiore/typeorm-fixtures.git"
+  },
+  "bugs": {
+    "url": "https://github.com/altiore/typeorm-fixtures/issues"
+  },
+  "homepage": "https://github.com/altiore/typeorm-fixtures#readme",
+  "dependencies": {
+    "immer": "^5.3.4"
+  },
+  "devDependencies": {
+    "typescript": "3.7.5"
+  }
+}
