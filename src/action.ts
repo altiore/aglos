@@ -1,3 +1,1 @@
-export default (type) => ({
-  type,
-});
+export const AGLOS_ACTION_TYPE = '@@AGLOS_ACTION';
